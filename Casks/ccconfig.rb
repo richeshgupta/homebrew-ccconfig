@@ -17,6 +17,17 @@ cask "ccconfig" do
 
   app "ccconfig.app"
 
+  caveats <<~EOS
+    CCConfig is not yet code-signed with an Apple Developer ID.
+    macOS may report the app as "damaged" on first launch.
+
+    To fix this, run:
+      xattr -cr /Applications/ccconfig.app
+
+    Then open the app normally or run:
+      open -a ccconfig
+  EOS
+
   zap trash: [
     "~/Library/Application Support/ccconfig",
     "~/Library/Preferences/in.richesh.ccconfig.plist",
