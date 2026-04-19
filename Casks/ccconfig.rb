@@ -1,14 +1,14 @@
 cask "ccconfig" do
-  version "0.1.0"
+  version "0.1.1"
 
   on_intel do
-    url "https://github.com/richeshgupta/ccconfig/releases/download/v#{version}/ccconfig_#{version}_x64.dmg"
-    sha256 "INTEL_SHA256_PLACEHOLDER"
+    url "https://github.com/richeshgupta/ccconfig-releases/releases/download/v#{version}/ccconfig_#{version}_x64.dmg"
+    sha256 "3202f4c8d45b6ce90bed6e4cce3466f1f4f4af6e1d6e6b4332b05387b38312b9"
   end
 
   on_arm do
-    url "https://github.com/richeshgupta/ccconfig/releases/download/v#{version}/ccconfig_#{version}_aarch64.dmg"
-    sha256 "ARM_SHA256_PLACEHOLDER"
+    url "https://github.com/richeshgupta/ccconfig-releases/releases/download/v#{version}/ccconfig_#{version}_aarch64.dmg"
+    sha256 "03df080f7cff45ac4958a834835febd0d37cb00eabe29e7bd93d76705792d177"
   end
 
   name "CCConfig"
